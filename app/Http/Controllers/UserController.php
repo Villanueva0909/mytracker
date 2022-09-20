@@ -13,7 +13,7 @@ class UserController extends Controller
 
     public function users(){
                 $users= User::all();
-                if(Auth::user()->fkrole == 2){
+                if(Auth::user()->fkrole == 2 || 1 ){
                 return view('admin.users.users',compact('users'));
             }else{
                 return redirect('login')->with('warning',Auth::user()->name.' You are not Eligible to see this');
