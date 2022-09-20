@@ -148,6 +148,6 @@ class SalesController extends Controller
         $handedover =Sales::find($id)->update([
             'handedover'=>true,
          ]);
-        return back()->with('success','Money Handed Over');
+        return back()->with('success','Package Recieved');
     }
 }

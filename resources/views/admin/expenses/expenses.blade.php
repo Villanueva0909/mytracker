@@ -8,7 +8,7 @@
     <table class="table">
   <thead>
     <tr>
-    <th scope="col">Company</th>
+    <th scope="col">Branch</th>
       <th scope="col">Purpose</th>
       <th scope="col">Amount Spent</th>
       <th scope="col">  <button class="btn btn-block btn-warning" data-bs-toggle="modal" data-bs-target="#addexpense">Spend</button> </th>
@@ -42,7 +42,7 @@
       {{csrf_field()}}
             <div class="modal-body">
           <select class="form-control mb-2" name="company" id="">
-          <option value="">Select Company</option>
+          <option value="">Select Branch</option>
             @foreach($companies as $company)
          
             <option value="{{$company -> id}}">{{$company -> companyname}}</option>

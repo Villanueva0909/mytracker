@@ -15,7 +15,7 @@
     <table class="table">
   <thead>
     <tr>
-    <th scope="col">Company</th>
+    <th scope="col">Branch</th>
       <th scope="col">Item Sold</th>
       <th scope="col">Stock Key</th>
       <th scope="col">Quantity Sold</th>
@@ -88,7 +88,7 @@
       {{csrf_field()}}
             <div class="modal-body">
           <select class="form-control mb-2" name="company" id="">
-            <option value="">Select Company</option>
+            <option value="">Select Branch</option>
             @foreach($companies as $company)
           <option value="{{$company->id}}">{{$company->companyname}}</option>
            

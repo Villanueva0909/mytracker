@@ -9,7 +9,7 @@
   <thead>
     <tr>
     <th scope="col">Product Name</th>
-    <th scope="col">Visible</th>
+    {{-- <th scope="col">Visible</th> --}}
     <th scope="col">Added Date</th>
      <th scope="col">  <button class="btn btn-block btn-warning" data-bs-toggle="modal" data-bs-target="#addproduct">Add Product</button> </th>
     </tr>
@@ -18,7 +18,7 @@
       @foreach($products as $product)
     <tr>
     <td>{{$product->productname}}</td>
-      <th>{{$product->visible}}</th>
+      {{-- <th>{{$product->visible}}</th> --}}
       <th>{{$product->created_at}}</th>
       
     </tr>

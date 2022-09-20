@@ -21,7 +21,7 @@
     <tr>
     <th scope="col">Stock Batch</th>
     <th scope="col">Stock Id</th>
-    <th scope="col">Stock Company</th>
+    <th scope="col">Stock Branch</th>
     <th scope="col">Item Stocked</th>
     <th scope="col">Stock Quantity</th>
     <th scope="col">Stock Amount</th>
@@ -113,7 +113,7 @@
       {{csrf_field()}}
             <div class="modal-body">
               <select class="form-control mb-2" name="fkcompany" id="">
-                <option value="">Select Company</option>
+                <option value="">Select Branch</option>
                 @foreach($companies as $company)
                
                 <option value="{{$company->id}}">{{$company->companyname}}</option>

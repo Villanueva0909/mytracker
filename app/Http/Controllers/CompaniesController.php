@@ -38,9 +38,9 @@ class CompaniesController extends Controller
                     'fkcompany'=>$newcompany,
                     'fkadmin'=>$request->input('fkadmin')
                 ]);
-                return back()->with('success', 'company created');
+                return back()->with('success', 'Branch Created');
             }else{
-                return back()->with('danger', 'NOT CREATED!. Company Admin not assigned');
+                return back()->with('danger', 'NOT CREATED!. Branch Admin not assigned');
             }
         }else{
             return back();

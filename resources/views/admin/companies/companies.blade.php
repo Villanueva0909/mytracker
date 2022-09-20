@@ -8,9 +8,9 @@
     <table class="table">
   <thead>
     <tr>
-    <th scope="col">Company Name</th>
-    <th scope="col">Company Admin</th>
-     <th scope="col">  <button class="btn btn-block btn-warning" data-bs-toggle="modal" data-bs-target="#addcompany">Add Company</button> </th>
+    <th scope="col">Branch Name</th>
+    <th scope="col">Branch Admin</th>
+     <th scope="col">  <button class="btn btn-block btn-warning" data-bs-toggle="modal" data-bs-target="#addcompany">Add Branch</button> </th>
     </tr>
   </thead>
   <tbody>
@@ -34,16 +34,16 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">ADD COMPANY</h5>
+        <h5 class="modal-title">ADD BRANCH</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <form action="{{url('/addcompany')}}" method="post"  enctype="multipart/form-data">
       {{csrf_field()}}
             <div class="modal-body">
 
-                    <input class="form-control mb-2" type="text" name="companyname" id="" placeholder="Enter company name" required>
+                    <input class="form-control mb-2" type="text" name="companyname" id="" placeholder="Enter Branch Name" required>
                    <select class="form-control mb-2" name="fkadmin" id="">
-                   <option value=" ">Select Company Admin</option>
+                   <option value=" ">Select Branch Admin</option>
                    @foreach($users as $user)
                       
                         <option value="{{$user->id}}">{{$user->name}}</option>

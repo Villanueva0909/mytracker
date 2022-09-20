@@ -8,7 +8,7 @@
   <thead>
     <tr>
      
-    <th scope="col">Company</th>
+    <th scope="col">Branch</th>
       <th scope="col">Working Capital</th>
       <th scope="col">Withdraws</th>
       <th scope="col">Sales</th>
