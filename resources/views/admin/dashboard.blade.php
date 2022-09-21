@@ -10,7 +10,7 @@
      
     <th scope="col">Branch</th>
       <th scope="col">Working Capital</th>
-      <th scope="col">Withdraws</th>
+      {{-- <th scope="col">Withdraws</th> --}}
       <th scope="col">Sales</th>
       <th scope="col">Profits</th>
       <th >Created</th>
@@ -25,7 +25,7 @@
       <tr>
       <td>{{$investiment->Companies->companyname}}</td>
         <td>{{$investiment->workingcapital}}</td>
-        <td>{{$investiment->withdraws}}</td>
+        {{-- <td>{{$investiment->withdraws}}</td> --}}
         <td>{{$investiment->sales}}</td>
         <td>{{$investiment->profits}}</td>
         <td>{{$investiment->created_at}}</td>
