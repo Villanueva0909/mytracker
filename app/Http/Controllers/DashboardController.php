@@ -16,7 +16,7 @@ class DashboardController extends Controller
     public function dashboard(){
         $investiments = Investiments::all();
            // dd($investiments);
-           if(Auth::User()->fkrole == 2 || Auth::User()->fkrole == 3 || Auth::User()->fkrole == 1 ){
+           if(Auth::User()->fkrole == 2 || Auth::User()->fkrole == 3){
             return view('admin.dashboard',compact('investiments'))->with('success','You are now logged in as '. Auth::user()->name);
            }elseif (Auth::User()->fkrole == 3 ) {
               return redirect('sales')->with('success','You are now logged in as '. Auth::user()->name);
