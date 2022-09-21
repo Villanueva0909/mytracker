@@ -6,7 +6,7 @@
 @if(Auth::user()->fkrole == 2)
 <div class="row">
     <div class="col-12 d-flex justify-content-end">
-      <button class="btn btn-block btn-warning" data-bs-toggle="modal" data-bs-target="#addsale">Sell</button>
+      <button class="btn btn-block btn-warning" data-bs-toggle="modal" data-bs-target="#addsale">Deliver</button>
      </div>
 </div>
 @endif
@@ -81,7 +81,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Sell Product</h5>
+        <h5 class="modal-title">Deliver Product</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <form action="{{url('/addsale')}}" method="post"  enctype="multipart/form-data">
@@ -124,7 +124,7 @@
                     <input class="form-control mb-2" type="number" name="expenditureamount" id="" min='0' placeholder="Input Expenditure" required>
             </div>
             <div class="modal-footer">
-            <button class="btn btn-success" type="submit">Sell</button>
+            <button class="btn btn-success" type="submit">Deliver</button>
             </div>
       </form>
     </div>

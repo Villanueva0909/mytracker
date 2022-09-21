@@ -10,7 +10,7 @@
     <tr>
     <th scope="col">Customer Name</th>
     <th scope="col">Customer Number</th>
-      <th scope="col">Items Purchased</th>
+      {{-- <th scope="col">Items Purchased</th> --}}
       <th scope="col">Amount Loaned</th>
       <th scope="col">Amount Paid</th>
       <th scope="col">Amount Balance</th>
@@ -23,7 +23,7 @@
     <tr>
     <td>{{$loan->customername}}</td>
       <th>{{$loan->customernumber}}</th>
-      <td>{{$loan->itemspurchased}}</td>
+      {{-- <td>{{$loan->itemspurchased}}</td> --}}
       <td>{{$loan->amountloaned}}</td>
       <td>{{$loan->amountpaid}}</td>
       <td>{{$loan->amountbalance}}</td>

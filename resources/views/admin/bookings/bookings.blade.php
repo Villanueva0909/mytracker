@@ -36,7 +36,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Sell Product</h5>
+        <h5 class="modal-title">Book Item</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <form action="{{url('/addbooking')}}" method="post"  enctype="multipart/form-data">
