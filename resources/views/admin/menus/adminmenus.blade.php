@@ -17,31 +17,35 @@
         </ul>
     </div>
 </div>    --}}
-
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="/dashboard">Dashboard</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/companies">Branch</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/products">Products</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/users">Users</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/stock">Stock</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/sales">Sales</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/bookings">Bookings and likes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/loans">Items on Loan</a>
-      </li>
-  
-  </ul>
+<div class="container">
+  <div class="col">
+    <div class="row">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/companies">Branch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/products">Products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/users">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/stock">Stock</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sales">Sales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/bookings">Bookings and likes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/loans">Items on Loan</a>
+          </li>
+      
+      </ul>
+    </div>
+  </div>
